@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тест</title>
+</head>
+<body>
+    <h1>Що Ви знаєте про гречку і чи вмієте її готувати?</h1>
+    <form action="/my-handling-form-page" method="get">
+        <fieldset>
+            <legend>1. Для того, щоб гречка була розсипчастою при варінні, потрібно дотримуватись пропорцій:</legend>
+            <input type="radio" name="proportions" value="2.5 for 1"> 2,5 стакани води на 1 стакан крупи
+            <input type="radio" name="proportions" value="3 for 1"> 3 стакани води на 1 стакан крупи
+        </fieldset>
+        <fieldset>
+            <legend>2. При варінні, гречку потрібно засипати:</legend>
+            <input type="radio" name="cooking" value="cold"> у холодну воду
+            <input type="radio" name="cooking" value="hot"> у гарячу воду
+        </fieldset>
+        <fieldset>
+            <legend>3. Скільки часу потрібно варити гречку:</legend>
+            <input type="range" list="marks" name="timeboiling" min="0" max="50" step="5">хв *<br>
+            <datalist id="marks">
+                <option value="0" label="0">
+                <option value="5">
+                <option value="10" label="10">
+                <option value="15">
+                <option value="20" label="20">
+                <option value="25">
+                <option value="30" label="30">
+                <option value="35">
+                <option value="40" label="40">
+                <option value="45">
+                <option value="50" label="50">
+            </datalist>
+            <small>* показники від 0хв до 50хв з діапазоном 5хв</small>
+        </fieldset>
+        <fieldset>
+            <legend>4. Які мікроелементи містяться у гречці:</legend>
+                <div>
+                    <input type="checkbox" id="iron" name="microelement" value="iron">
+                    <label for="iron">Залізо</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="aluminum" name="microelement" value="aluminum">
+                    <label for="aluminum">Алюміній</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tin" name="microelement" value="tin">
+                    <label for="tin">Олово</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="potassium" name="microelement" value="potassium">
+                    <label for="potassium">Калій</label>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>5. З яким варенням гречана каша містить найменше калорій?</legend>
+            <select>
+                <option value="value1">Полуничним</option> 
+                <option value="value2">Вишневим</option>
+                <option value="value3">Абрикосовим</option>
+                <option value="value1">Смородиновим</option> 
+                <option value="value2">Малиновим</option>
+                <option value="value3">Чорничним</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>6. Якого кольору повинна бути гречка?</legend>
+            <input type="color">
+        </fieldset><br>
+        <progress value="3" max="6">50%</progress>
+        <button type="submit">Надіслати відповіді</button>
+    </form>
+</body>
+</html>
