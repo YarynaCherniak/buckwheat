@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,20 @@
 </head>
 <body>
     <h1>Що Ви знаєте про гречку і чи вмієте її готувати?</h1>
-    <form action="/my-handling-form-page" method="get">
+    <form action="https://formspree.io/cherniaky@ukr.net" method="post">
         <fieldset>
             <legend>1. Для того, щоб гречка була розсипчастою при варінні, потрібно дотримуватись пропорцій:</legend>
-            <input type="radio" name="proportions" value="2.5 for 1"> 2,5 стакани води на 1 стакан крупи
-            <input type="radio" name="proportions" value="3 for 1"> 3 стакани води на 1 стакан крупи
+            <input type="radio" name="proportions" value="2.5 for 1" id="proportion1">
+            <label for="proportion1">2,5 стакани води на 1 стакан крупи</label>
+            <input type="radio" name="proportions" value="3 for 1" id="proportion2">
+            <label for="proportion2">3 стакани води на 1 стакан крупи</label>
         </fieldset>
         <fieldset>
             <legend>2. При варінні, гречку потрібно засипати:</legend>
-            <input type="radio" name="cooking" value="cold"> у холодну воду
-            <input type="radio" name="cooking" value="hot"> у гарячу воду
+            <input type="radio" name="cooking" value="coldwater" id="cold">
+            <label for="cold">у холодну воду</label>
+            <input type="radio" name="cooking" value="hotwater" id="hot">
+            <label for="hot">у гарячу воду</label>
         </fieldset>
         <fieldset>
             <legend>3. Скільки часу потрібно варити гречку:</legend>
@@ -59,12 +63,12 @@
         <fieldset>
             <legend>5. З яким варенням гречана каша містить найменше калорій?</legend>
             <select>
-                <option value="value1">Полуничним</option> 
-                <option value="value2">Вишневим</option>
-                <option value="value3">Абрикосовим</option>
-                <option value="value1">Смородиновим</option> 
-                <option value="value2">Малиновим</option>
-                <option value="value3">Чорничним</option>
+                <option value="strawberry">Полуничним</option> 
+                <option value="cherry">Вишневим</option>
+                <option value="apricot">Абрикосовим</option>
+                <option value="currant">Смородиновим</option> 
+                <option value="raspberry">Малиновим</option>
+                <option value="blueberry">Чорничним</option>
             </select>
         </fieldset>
         <fieldset>
@@ -72,7 +76,7 @@
             <input type="color">
         </fieldset><br>
         <progress value="3" max="6">50%</progress>
-        <button type="submit">Надіслати відповіді</button>
+        <button type="submit" name="answers">Надіслати відповіді</button>
     </form>
 </body>
 </html>
